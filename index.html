@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Anormalidade</title>
+  <link rel="stylesheet" href="style25.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Registro de Anormalidade</h1>
+    <form id="registroForm">
+      
+      <div class="form-group">
+        <label for="descricao">Descrição da Anormalidade:</label>
+        <input type="text" id="descricao" name="descricao" placeholder="Descreva a anormalidade" required>
+      </div>
+
+      <div class="form-group">
+        <label for="data">Data da Ocorrência</label>
+        <input type="date" id="data" name="data" required>
+      </div>
+
+
+      <div class="form-group">
+        <label for="local">Local da Ocorrência:</label>
+        <input type="text" id="local" name="local" placeholder="Informe o local" required>
+      </div>
+
+        <div class="form-group">
+          <label for="foto">Imagem da Anormalidade:</label>
+        
+         
+          <button type="button" id="addButton" class="btn-secondary">Anexar Imagem</button>
+        
+          
+          <button type="button" id="removeButton" class="btn-remove" style="display: none;">Remover Foto</button>
+        
+          
+          <input type="file" id="foto" name="foto" accept="image/*" capture="environment" style="display: none;">
+        </div>
+      
+      
+
+      <button type="submit">Enviar</button>
+
+      <abbr title="Todos os dados serão armazenados de forma segura.">Segurança garantida</abbr>
+    </form>
+
+    <canvas id="relatorioCanvas" style="display: none;"></canvas>
+
+    <div class="error-message" id="errorMsg"></div>
+  </div>
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+
+  <script src="script25.js"></script>
+</body>
+</html>

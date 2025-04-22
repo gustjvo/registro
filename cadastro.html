@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cadastro</h1>
+    <form id="cadastroForm">
+      <div class="form-group">
+        <label for="cadNome">Nome:</label>
+        <input type="text" id="cadNome" placeholder="Nome completo" required>
+      </div>
+
+      <div class="form-group">
+        <label for="cadEndereco">Endereço:</label>
+        <input type="text" id="cadEndereco" placeholder="Rua, número, bairro" required>
+      </div>
+
+      <div class="form-group">
+        <label for="cadTelefone">Telefone:</label>
+        <input type="tel" id="cadTelefone" placeholder="(81) 99999-9999" required>
+      </div>
+
+      <div class="form-group">
+        <label for="cadEmail">E-mail:</label>
+        <input type="email" id="cadEmail" placeholder="exemplo@gmail.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="cadSenha">Senha:</label>
+        <input type="password" id="cadSenha" placeholder="Senha" required>
+      </div>
+
+      <button type="submit">Cadastrar</button>
+      <p>Já tem uma conta? <a href="login.html">Voltar ao login</a></p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
